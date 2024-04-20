@@ -2,21 +2,22 @@ import numpy as np
 import os
 import pandas as pd
 import glob
-from sklearn.preprocessing import LabelEncoder, StandardScaler
+
 
 
 def data_extraction(filepath: str) -> None:
-        """
-    A function that calculates various statistical features from the data stored in .npy files in the given folder path.
+    """
+            A function that calculates various statistical features from the data stored in .npy files in the given folder path.
 
-    Parameters:
-    - filepath: A string representing the path to the folder containing .npy files.
+            Parameters:
+                - filepath: A string representing the path to the folder containing .npy files.
 
-    Returns:
-    - No direct return value. Saves the calculated features and labels to a CSV file.
+            Returns:
+                - No direct return value. Saves the calculated features and labels to a CSV file.
     """
     
     files = list(filter(os.path.isfile, glob.glob(filepath + "/**/*.npy")))
+    
     #(filepath + "/**/**/*.npy")
 
     
@@ -76,9 +77,9 @@ def data_extraction(filepath: str) -> None:
     df["label"] = labels
     
     # get name of csv file
-    CsvName = input('enter there name of csv file')
+    csv_name  = input('enter there name of csv file : ')
     
     # save to csv or xlsx
-    df.to_csv("project_marvel/data/processed/"+CsvName+".csv", index=False)      
+    df.to_csv("data/processed/"+csv_name+".csv", index=False)      
         
     #df.to_excel("project_marvel/data/processed/"+CsvName+".xlsx", index=False)
