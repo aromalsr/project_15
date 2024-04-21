@@ -1,4 +1,4 @@
-# project_15
+# project_FLURO
 ==============================
 ### This a machine learning project aims to classify food and plastic using its fluroscence property
 
