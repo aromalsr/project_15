@@ -1,7 +1,7 @@
 project_15
 ==============================
+This a machine learning project aims to classify food and plastic using its fluroscence property
 
-a machine learning project
 
 Project Organization
 ------------
@@ -35,19 +35,15 @@ Project Organization
     ├── src                <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
     │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
+    │   ├── data           <- csv file for the project
     │   │
     │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
+    │   │   └── np_to_csv.py 
     │   │
     │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
     │   │
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
+    │       
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
